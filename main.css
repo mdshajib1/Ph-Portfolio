@@ -1,0 +1,103 @@
+
+/* start project  */
+
+.section-title h1 {
+    margin: 0 0;
+    padding-bottom: 20px;
+    font-size: 40px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project img {
+    width: 100%;
+}
+.check-all-projects {
+    display: flex;
+    justify-content: center;
+}
+.check-all-projects button {
+    padding: 15px 50px;
+    background-color: var(--background-color);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+   
+}
+
+/* end project  */
+
+
+/* blogs start */
+.my-blogs {
+    display: flex;
+    /* justify-content: space-between; */
+    
+}
+
+.tag {
+    background-color: var(--font-primary-color);
+    width: fit-content;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+
+.tag h1 {
+    color: black;
+}
+
+.my-blogs img {
+    display:block;
+    width:auto;
+    height:auto;
+    max-width:98%;
+    max-height:95%;
+}
+
+.date-name{
+    display: flex;
+    gap: 20px;
+}
+.round-date {
+    width: 15px;
+    height: 15px;
+    background-color: blueviolet;
+    border-radius: 100%;
+}
+.round-name {
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 100%;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blog-title {
+    margin: 30px 0;
+}
+
+
+
+
+
+
+@media only screen  and (min-width: 200px) and (max-width: 576px) {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .my-blogs {
+        flex-direction: column;
+    }
+}

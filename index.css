@@ -1,0 +1,109 @@
+.container {
+    padding: 0 40px;
+}
+.header-container{
+    height: 100%;
+   
+    background-image: url("./img/bc.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.nav{
+    
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--font-primary-color);
+    font-size: 36px;
+    /* padding: 0 40px;// */
+}
+#right-menu-icon-id{
+    width: 175px;
+    text-align: right;
+}
+
+.banner-title h1 {
+    font-size: 120px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    margin: 40px 10px;
+}
+.banner-desc{
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 20px 10px;
+}
+.banner-profile-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--font-primary-color);
+    border-bottom: 1px solid var(--font-primary-color);
+}
+
+.banner-profile-desc{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    font-size: 40px;
+}
+.work-icon-container{
+    display: flex;
+    gap: 15px;
+    /* padding: 0px 40px; */
+    padding-top: 180px;
+}
+.check-icon{
+    width: 60px;
+    height: 70px;
+}
+.banner-image-container{
+    background-color: var(--font-primary-color);
+    width: fit-content;
+    
+}
+#banner-image {
+    height: 270px;
+}
+.complete-project-container{
+    /* padding: 0 40px; */
+    display: flex;
+    justify-content: space-between;
+}
+.complete-project-card h1 {
+    font-size: 152px;
+    text-transform: uppercase;
+}
+.complete-project-card p {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width:576px){
+    .nav{
+        font-size: 16px;
+    }
+    .complete-project-container{
+        flex-direction: column;
+    }
+
+    .banner-profile-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .banner-image-container{
+        width:100%;
+    }
+    .banner-title h1 {
+        font-size: 25px;
+    }
+    #banner-image {
+        width: 100%;
+    }
+    
+}
